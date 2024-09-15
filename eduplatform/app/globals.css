@@ -1,0 +1,217 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+/*
+body {   
+  background-color: #f4f4f8;
+  overflow-x: hidden;
+}
+*/
+li {
+  list-style-type: none;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  width: 100%;
+  padding-top: 30px;
+  gap: 30px 20px;
+}
+/*
+.card__theme {
+  margin-right: 20px;
+  max-width: 80%;
+  white-space: normal;
+}
+
+.card__content {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 600;
+}
+*/
+.card__buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.task__modal {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.register__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 80px;
+}
+
+.register__form input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.register__form button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.register__form .register__submit__btn:hover {
+  background-color: #001529;
+}
+
+.login__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 80px;
+}
+
+.login__form input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.login__form button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login__form .login__submit__btn:hover {
+  background-color: #001529;
+}
+
+/*===================================================================================================================*/
+
+.card__section {
+  position: relative;
+  left: 0;
+  padding: 30px 0; 
+}
+
+.card__container {
+  padding: 0 8%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #f0f0f0;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  width: 100%;
+  transition: box-shadow 0.3s ease;
+}
+
+.card__theme {
+  margin-bottom: 8px;
+}
+
+.card__inputs__buttons {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.card__answer__input {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+}
+
+.card__answer__input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.card__submit__answer_btn {
+  padding: 12px 24px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card__submit__answer_btn:hover {
+  background-color: #0056b3;
+}
+
+.card__theme {
+  margin-right: 20px;
+  max-width: 80%;
+  white-space: normal;
+}
+
+.card__content {
+  padding: 0 0 20px 0;
+}
+
+.card__answer__options {
+  margin-bottom: 20px;
+}
+
+.card__answer__options p {
+  margin-bottom: 5px;
+  font-size: 14px;
+  line-height: 1.6;
+}
